@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", serif;
+}
+
+main {
+  place-content: center;
+  height: 90vh;
+  text-align: center;
+}
+
+a.item-menu {
+  color: rgb(250, 248, 246);
+  text-decoration: none;
+  list-style: none;
+  opacity: 0.75;
+  font-weight:echo "# 15_Landing_Bootstrap" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/ImageDesignStudio/15_Landing_Bootstrap.git
+git push -u origin main 300;
+  letter-spacing: 0.2px;
+  font-size: 15px;
+  transition: 0.3s opacity ease-in-out;
+  -webkit-transition: 0.3s opacity ease-in-out;
+  -moz-transition: 0.3s opacity ease-in-out;
+  -ms-transition: 0.3s opacity ease-in-out;
+  -o-transition: 0.3s opacity ease-in-out;
+}
+
+p.tagline {
+  position: absolute;
+  margin-bottom: -40px;
+  font-size: 11px;
+}
+
+button.btn-menu {
+  border: none;
+  outline: none;
+  color: #fff !important;
+  background-color: transparent !important;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  transition: 0.2s opacity ease-in-out;
+  -webkit-transition: 0.2s color ease-in-out;
+  -moz-transition: 0.2s color ease-in-out;
+  -ms-transition: 0.2s color ease-in-out;
+  -o-transition: 0.2s color ease-in-out;
+}
+
+a.item-menu:hover {
+  opacity: 1;
+}
+
+button.btn-menu:hover {
+  color: #aaa !important;
+}
