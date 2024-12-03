@@ -1,5 +1,10 @@
 <footer>
-  <p>&copy; <?php echo date("Y"); ?> Mi sitio web</p>
+  <div class="container text-center">
+    <small>
+      <p>&copy; <?php echo date("Y"); ?> Bootstrap 5 - Web Components</p>
+      <p>Image Creative Studio ©2009-2024.<br>
+        Buenos Aires - Argentina
+    </small>
+    </p>
+  </div>
 </footer>
-
-<button id="scrollTop" style="display: none;">↑</button>

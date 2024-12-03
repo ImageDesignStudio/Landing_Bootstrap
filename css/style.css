@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 
 * {
   margin: 0;
@@ -17,17 +17,12 @@ main {
 }
 
 a.item-menu {
+  font-family: "Roboto Mono", monospace;
   color: rgb(250, 248, 246);
   text-decoration: none;
   list-style: none;
   opacity: 0.75;
-  font-weight:echo "# 15_Landing_Bootstrap" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/ImageDesignStudio/15_Landing_Bootstrap.git
-git push -u origin main 300;
+  font-weight: 200;
   letter-spacing: 0.2px;
   font-size: 15px;
   transition: 0.3s opacity ease-in-out;
@@ -65,4 +60,26 @@ a.item-menu:hover {
 
 button.btn-menu:hover {
   color: #aaa !important;
+}
+
+/* Transicion entre secciones */
+.fade {
+  opacity: 0;
+  transition: opacity 0.75s ease;
+  -webkit-transition: opacity 0.75s ease;
+  -moz-transition: opacity 0.75s ease;
+  -ms-transition: opacity 0.75s ease;
+  -o-transition: opacity 0.75s ease;
+}
+
+.fade.show {
+  opacity: 1;
+}
+
+footer {
+  background: white;
+  color: #353535;
+  border-top: 0.5px solid rgba(255, 255, 255, 0.2);
+  padding-top: 50px;
+  padding-bottom: 50px;
 }

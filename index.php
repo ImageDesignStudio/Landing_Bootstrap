@@ -15,19 +15,35 @@
 </head>
 
 <body class="bg-dark text-light">
-  <?php
-  include "modulos/menu.php";
-  ?>
 
-  <main>
-    <div class="container d-flex h-100vh justify-content-center">
-      <h1>Web Components Bootstrap 5</h1>
-    </div>
-  </main>
+  <div id="content" class="fade show">
 
-  <!-- Scripts -->
-  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/scripts.js"></script>
+    <?php
+
+    include "modulos/menu.php";
+
+    if (isset($_GET["url"])) {
+
+      if ($_GET["url"] == "inicio" ||  $_GET["url"] == "accordion" || $_GET["url"] == "alerts" || $_GET["url"] == "badge" || $_GET["url"] == "breadcrumb" || $_GET["url"] == "buttons" || $_GET["url"] == "button-group" || $_GET["url"] == "card" || $_GET["url"] == "button-group" || $_GET["url"] == "carousel" || $_GET["url"] == "close-button" || $_GET["url"] == "collapse" || $_GET["url"] == "dropdown" || $_GET["url"] == "list-groups" || $_GET["url"] == "modal" || $_GET["url"] == "navbar" || $_GET["url"] == "off-canvas" || $_GET["url"] == "pagination" || $_GET["url"] == "placeholders" || $_GET["url"] == "popover" || $_GET["url"] == "progress" || $_GET["url"] == "scrollspy" || $_GET["url"] == "spinners" || $_GET["url"] == "toast" || $_GET["url"] == "tooltips") {
+
+        include "modulos/" . $_GET["url"] . ".php";
+      }
+
+      include "modulos/footer.php";
+    } else {
+
+      include "modulos/inicio.php";
+    }
+
+    echo '</div></div>';
+
+    ?>
+
+
+
+    <!-- Scripts -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
