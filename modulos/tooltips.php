@@ -1,5 +1,5 @@
 <main>
   <div class="container">
-    <h1>Tooltips</h1>
+    <h1 class="animar-texto">Tooltips</h1>
   </div>
 </main>

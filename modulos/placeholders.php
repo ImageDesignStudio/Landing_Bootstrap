@@ -1,5 +1,5 @@
 <main>
   <div class="container">
-    <h1>Placeholders</h1>
+    <h1 class="animar-texto">Placeholders</h1>
   </div>
 </main>

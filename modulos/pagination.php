@@ -1,5 +1,5 @@
 <main>
   <div class="container">
-    <h1>Pagination</h1>
+    <h1 class="animar-texto">Pagination</h1>
   </div>
 </main>

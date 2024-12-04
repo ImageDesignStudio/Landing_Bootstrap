@@ -1,5 +1,5 @@
 <main>
   <div class="container">
-    <h1>Navbar</h1>
+    <h1 class="animar-texto">Navbar</h1>
   </div>
 </main>

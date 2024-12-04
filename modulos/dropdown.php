@@ -1,5 +1,5 @@
 <main>
   <div class="container">
-    <h1>Dropdown</h1>
+    <h1 class="animar-texto">Dropdown</h1>
   </div>
 </main>

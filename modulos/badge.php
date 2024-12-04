@@ -1,5 +1,5 @@
 <main>
   <div class="container">
-    <h1>Badge</h1>
+    <h1 class="animar-texto">Badge</h1>
   </div>
 </main>

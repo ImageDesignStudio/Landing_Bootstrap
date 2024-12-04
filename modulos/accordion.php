@@ -1,5 +1,5 @@
 <main>
   <div class="container">
-    <h1 class="fade show">Accordion</h1>
+    <h1 class="animar-texto">Accordion</h1>
   </div>
 </main>

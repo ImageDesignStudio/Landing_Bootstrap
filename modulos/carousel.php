@@ -1,5 +1,5 @@
 <main>
   <div class="container">
-    <h1>Carousel</h1>
+    <h1 class="animar-texto">Carousel</h1>
   </div>
 </main>

@@ -1,5 +1,5 @@
 <main>
   <div class="container">
-    <h1>OffCanvas</h1>
+    <h1 class="animar-texto">OffCanvas</h1>
   </div>
 </main>
