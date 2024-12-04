@@ -90,5 +90,12 @@
         <a class="item-menu" href="tooltips">Tooltips</a>
       </li>
     </ul>
+    <div class="footer-menu">
+      <small>
+        <a href="mailto:info@image.com.ar" target="_blank">info@image.com.ar</a><br>
+      </small>
+      <p>@2009-2024.</br>
+        Buenos Aires -Argentina</p>
+    </div>
   </div>
 </div>

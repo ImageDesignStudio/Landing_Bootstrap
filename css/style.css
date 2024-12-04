@@ -20,15 +20,20 @@ main {
   text-align: center;
 }
 
-a.item-menu {
+a.item-menu,
+.footer-menu a {
   font-family: "Roboto Mono", monospace;
   color: rgb(250, 248, 246, 0.75);
+  position: relative;
   text-decoration: none;
   list-style: none;
-  font-weight: 200;
-  letter-spacing: 0.2px;
-  font-size: 15px;
-  line-height: 2rem;
+  line-height: 1.5rem;
+  list-style-type: none;
+  display: inline-block;
+  color: rgb(250, 248, 246, 0.7);
+  background-color: transparent;
+  font-size: 14.5px;
+  overflow: hidden;
   transition: 0.25s color ease-in-out;
   -webkit-transition: 0.25s color ease-in-out;
   -moz-transition: 0.25s color ease-in-out;
@@ -36,37 +41,25 @@ a.item-menu {
   -o-transition: 0.25s color ease-in-out;
 }
 
-a.item-menu:hover {
+a.item-menu:hover,
+.footer-menu a:hover {
   color: rgb(250, 248, 246, 1);
-}
-
-/* Estilo base del elemento */
-a.item-menu {
-  position: relative;
-  display: inline-block;
-  color: rgb(250, 248, 246, 0.7);
-  background-color: transparent;
-  font-size: 14px;
-  text-align: center;
-  overflow: hidden;
 }
 
 /* Before y After para el efecto */
 a.item-menu::before,
-a.item-menu::after {
+a.item-menu::after,
+.footer-menu a::after {
   content: "";
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 1.5px;
-  border-radius: 50%;
-  /*Grosordelbackground*/
+  height: 2px;
+  border-radius: 25%;
   width: 100%;
   background-color: white;
   transform: scaleX(0);
-  /*Escalainicialen0*/
   transform-origin: left;
-  /*Elefectoempiezadelaizquierda*/
   transition: transform 0.2s ease;
   -webkit-transition: transform 0.2s ease;
   -moz-transition: transform 0.2s ease;
@@ -79,11 +72,13 @@ a.item-menu::after {
 }
 
 /* Hover: activar el efecto */
-a.item-menu:hover::before {
+a.item-menu:hover::before,
+.footer-menu:hover a::before {
   transform: scaleX(1); /* El before cubre toda la anchura */
 }
 
-a.item-menu:hover::after {
+a.item-menu:hover::after,
+.footer-menu:hover a::after {
   transform: scaleX(1); /* El after cubre toda la anchura */
 }
 
@@ -125,6 +120,21 @@ footer {
   padding-bottom: 50px;
 }
 
+.footer-menu {
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.8rem;
+  padding: 0px 30px;
+}
+
+.footer-menu a {
+  color: #ccc;
+}
+
+.footer-menu p {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* ANIMACIONES */
 /* Transicion entre secciones */
 .fade {
   opacity: 0;
@@ -140,8 +150,8 @@ footer {
   font-weight: 400;
   color: rgba(255, 255, 255, 0.8);
   letter-spacing: 0.3px;
-  animation: cambiarColor 0.75s ease-in;
-  -webkit-animation: cambiarColor 0.75s ease-in;
+  animation: cambiarColor 1s ease;
+  -webkit-animation: cambiarColor 1s ease;
 }
 
 /* Definición de la animación */
