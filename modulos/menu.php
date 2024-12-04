@@ -1,10 +1,10 @@
 <div class="container">
   <nav class="navbar navbar-expand-lg bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand text-white" href="inicio">Bootstrap 5</a>
-      <p class="tagline">web components</p>
+      <a class="navbar-brand text-white animar-texto" href="inicio">Bootstrap 5</a>
+      <p class="tagline animar-texto">web components</p>
       <div class="d-flex">
-        <button class="btn-menu justify-content-end text-bg-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Menu</button>
+        <button class="btn-menu animar-texto justify-content-end text-bg-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Menu</button>
       </div>
   </nav>
 </div>

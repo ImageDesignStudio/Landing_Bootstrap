@@ -10,6 +10,10 @@ body {
   font-family: "Inter", serif;
 }
 
+.bg-dark {
+  background-color: rgba(5, 10, 25, 1) !important;
+}
+
 main {
   place-content: center;
   height: 100vh;
@@ -18,18 +22,69 @@ main {
 
 a.item-menu {
   font-family: "Roboto Mono", monospace;
-  color: rgb(250, 248, 246);
+  color: rgb(250, 248, 246, 0.75);
   text-decoration: none;
   list-style: none;
-  opacity: 0.75;
   font-weight: 200;
   letter-spacing: 0.2px;
   font-size: 15px;
-  transition: 0.3s opacity ease-in-out;
-  -webkit-transition: 0.3s opacity ease-in-out;
-  -moz-transition: 0.3s opacity ease-in-out;
-  -ms-transition: 0.3s opacity ease-in-out;
-  -o-transition: 0.3s opacity ease-in-out;
+  line-height: 2rem;
+  transition: 0.25s color ease-in-out;
+  -webkit-transition: 0.25s color ease-in-out;
+  -moz-transition: 0.25s color ease-in-out;
+  -ms-transition: 0.25s color ease-in-out;
+  -o-transition: 0.25s color ease-in-out;
+}
+
+a.item-menu:hover {
+  color: rgb(250, 248, 246, 1);
+}
+
+/* Estilo base del elemento */
+a.item-menu {
+  position: relative;
+  display: inline-block;
+  color: rgb(250, 248, 246, 0.7);
+  background-color: transparent;
+  font-size: 14px;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Before y After para el efecto */
+a.item-menu::before,
+a.item-menu::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1.5px;
+  border-radius: 50%;
+  /*Grosordelbackground*/
+  width: 100%;
+  background-color: white;
+  transform: scaleX(0);
+  /*Escalainicialen0*/
+  transform-origin: left;
+  /*Elefectoempiezadelaizquierda*/
+  transition: transform 0.2s ease;
+  -webkit-transition: transform 0.2s ease;
+  -moz-transition: transform 0.2s ease;
+  -ms-transition: transform 0.2s ease;
+  -o-transition: transform 0.2s ease;
+  -webkit-border-radius: 25%;
+  -moz-border-radius: 25%;
+  -ms-border-radius: 25%;
+  -o-border-radius: 25%;
+}
+
+/* Hover: activar el efecto */
+a.item-menu:hover::before {
+  transform: scaleX(1); /* El before cubre toda la anchura */
+}
+
+a.item-menu:hover::after {
+  transform: scaleX(1); /* El after cubre toda la anchura */
 }
 
 p.tagline {
@@ -52,10 +107,6 @@ button.btn-menu {
   -moz-transition: 0.2s color ease-in-out;
   -ms-transition: 0.2s color ease-in-out;
   -o-transition: 0.2s color ease-in-out;
-}
-
-a.item-menu:hover {
-  opacity: 1;
 }
 
 button.btn-menu:hover {
@@ -89,8 +140,8 @@ footer {
   font-weight: 400;
   color: rgba(255, 255, 255, 0.8);
   letter-spacing: 0.3px;
-  animation: cambiarColor 1s ease-in-out;
-  -webkit-animation: cambiarColor 1s ease-in-out;
+  animation: cambiarColor 0.75s ease-in;
+  -webkit-animation: cambiarColor 0.75s ease-in;
 }
 
 /* Definición de la animación */
