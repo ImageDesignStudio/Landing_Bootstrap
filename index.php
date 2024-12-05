@@ -44,6 +44,17 @@
     <!-- Scripts -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/scripts.js"></script>
+    <!-- Accordion -->
+    <script>
+      function copyAccordionContent(targetId) {
+        const content = document.querySelector(`${targetId} .accordion-body`).innerText;
+        navigator.clipboard.writeText(content).then(() => {
+          alert("Contenido copiado al portapapeles.");
+        }).catch(err => {
+          console.error("Error al copiar: ", err);
+        });
+      }
+    </script>
 </body>
 
 </html>

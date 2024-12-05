@@ -90,12 +90,18 @@
         <a class="item-menu" href="tooltips">Tooltips</a>
       </li>
     </ul>
-    <div class="footer-menu">
-      <small>
-        <a href="mailto:info@image.com.ar" target="_blank">info@image.com.ar</a><br>
-      </small>
-      <p>@2009-2024.</br>
-        Buenos Aires -Argentina</p>
+
+    <div class="prefooter">
+      <a href="mailto:info@image.com.ar" target="_blank">info@image.com.ar</a>
     </div>
+
+    <div class="footer-menu">
+      <p>@2009-2024</br>
+        Buenos Aires - Argentina<br>
+        Bootstrap 5 Components <br>
+        <small>by Image</small>
+      </p>
+    </div>
+
   </div>
 </div>

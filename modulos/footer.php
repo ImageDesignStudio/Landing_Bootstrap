@@ -1,10 +1,8 @@
 <footer>
   <div class="container text-center">
+    <p class="text-white"> Bootstrap 5 - Web Components</p>
     <small>
-      <p>&copy; <?php echo date("Y"); ?> Bootstrap 5 - Web Components</p>
-      <p>Image Creative Studio ©2009-2024.<br>
-        Buenos Aires - Argentina
+      <p>Image Creative Studio &copy;2009-<?php echo date("Y"); ?></p>
     </small>
-    </p>
   </div>
 </footer>
