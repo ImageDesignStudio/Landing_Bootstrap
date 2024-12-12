@@ -27,7 +27,7 @@
       suelte la clase <code>.collapsed</code> del elemento <code>.accordion-button</code> y establezca su atributo aria-expanded en <code>true</code>.</p>
   </div>
 
-  <div class="card bg-dark-subtle tex my-4">
+  <div class="card bg-dark tex my-4">
     <div class="card-header d-flex justify-content-between align-items-center">
       <span>Código HTML</span>
       <button class="btn btn-sm btn-primary" onclick="copyToClipboard('#codeToCopy')">
