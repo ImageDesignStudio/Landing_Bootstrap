@@ -1,13 +1,11 @@
-<div class="container">
-  <nav class="navbar navbar-expand-lg bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand text-white animar-texto" href="inicio">Bootstrap 5</a>
-      <p class="tagline animar-texto">web components</p>
-      <div class="d-flex">
-        <button class="btn-menu animar-texto justify-content-end text-bg-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Menu</button>
-      </div>
-  </nav>
-</div>
+<nav class="navbar navbar-expand-lg d-flex align-items-center navbar-blur sticky-top py-2">
+  <div class="container">
+    <a class="navbar-brand text-white animar-texto" href="inicio">Bootstrap 5</a>
+    <div class="d-flex">
+      <button class="btn-menu animar-texto justify-content-end text-bg-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Menu</button>
+    </div>
+  </div>
+</nav>
 
 <!-- Menu offCanva-->
 <div class="offcanvas offcanvas-start bg-dark" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
@@ -18,7 +16,7 @@
   <div class="offcanvas-body p-0">
     <ul class="menu">
       <li>
-        <a class="item-menu" href="inicio">Inicio</a>
+        <a class="item-menu animar-texto" href="inicio">Inicio</a>
       </li>
       <li>
         <a class="item-menu" href="accordion">Accordion</a>

@@ -32,6 +32,20 @@ main {
   text-align: center;
 }
 
+.navbar {
+  padding-top: 10px !important;
+  padding-bottom: 13px !important;
+}
+
+.navbar-blur {
+  backdrop-filter: blur(10px); /* Aplicar el desenfoque */
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente */
+}
+
+.navbar-brand {
+  padding: 0px !important;
+}
+
 a.item-menu {
   color: rgb(250, 248, 246, 0.75);
   position: relative;
@@ -50,6 +64,29 @@ a.item-menu {
   -moz-transition: 0.25s color ease-in-out;
   -ms-transition: 0.25s color ease-in-out;
   -o-transition: 0.25s color ease-in-out;
+}
+
+.pie {
+  opacity: 0;
+  transform: translateY(0px);
+  transition: opacity 1.75s ease, transform 1.75s ease;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  -webkit-transition: opacity 1.75s ease, transform 1.75s ease;
+  -moz-transition: opacity 1.75s ease, transform 1.75s ease;
+  -ms-transition: opacity 1.75s ease, transform 1.75s ease;
+  -o-transition: opacity 1.75s ease, transform 1.75s ease;
+}
+
+.pie.visible {
+  opacity: 1;
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
 }
 
 a.item-menu:hover,
@@ -88,12 +125,6 @@ a.item-menu:hover::before {
 
 a.item-menu:hover::after {
   transform: scaleX(1); /* El after cubre toda la anchura */
-}
-
-p.tagline {
-  position: absolute;
-  margin-bottom: -40px;
-  font-size: 11px;
 }
 
 button.btn-menu {
@@ -165,6 +196,38 @@ footer p {
   -moz-transition: opacity 0.75s ease;
   -ms-transition: opacity 0.75s ease;
   -o-transition: opacity 0.75s ease;
+}
+
+h5.card-title {
+  font-family: "Inter", sans-serif !important;
+  color: #aac6d7;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: -0.3px;
+}
+
+.card {
+  background-color: rgb(25, 28, 24, 0.7) !important;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.75s ease, transform 0.75s ease;
+  -webkit-transform: translateY(20px);
+  -moz-transform: translateY(20px);
+  -ms-transform: translateY(20px);
+  -o-transform: translateY(20px);
+  -webkit-transition: opacity 0.75s ease, transform 0.75s ease;
+  -moz-transition: opacity 0.75s ease, transform 0.75s ease;
+  -ms-transition: opacity 0.75s ease, transform 0.75s ease;
+  -o-transition: opacity 0.75s ease, transform 0.75s ease;
+}
+
+.card.visible {
+  opacity: 1;
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
 }
 
 /* Estilo inicial para el texto */

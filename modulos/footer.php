@@ -1,4 +1,4 @@
-<footer>
+<footer class="pie">
   <div class="container text-center">
     <p class="text-white"> Bootstrap 5 - Web Components</p>
     <small>
