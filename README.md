@@ -1,4 +1,4 @@
-# 15_Landing_Bootstrap
+#Landing_Bootstrap
 
 # Bootstrap 5 Components Showcase
 
