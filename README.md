@@ -1,6 +1,6 @@
-#Landing_Bootstrap
+# Landing_Bootstrap
 
-# Bootstrap 5 Components Showcase
+## Bootstrap 5 Components
 
 Este sitio web es una página interactiva en la que se muestran todos los componentes incluidos en la versión 5 de Bootstrap. Está diseñado para ser un recurso útil para desarrolladores y diseñadores que desean explorar y aprender cómo utilizar los distintos elementos de la popular biblioteca de diseño Bootstrap 5.
 
